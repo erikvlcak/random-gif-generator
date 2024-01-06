@@ -1,8 +1,7 @@
-# React + Vite
+# GIF Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple GIF generator. Data fetched from giphy.com.
 
-Currently, two official plugins are available:
+Generate random GIF by meaving input field blank (random GIF) or type a keyword. Each click on Search Button generates new GIF. In case of wrong keyword, error message is displayed instead of GIF.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+BTW THIS IS MY FIRST PAGE CODED IN REACT YAY.
