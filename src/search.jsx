@@ -29,7 +29,7 @@ function Search() {
 
   return (
     <main className="flex  flex-col items-center gap-56 mb-auto">
-      <div className="flex gap-6 mt-20">
+      <div className="flex flex-wrap gap-6 mt-20 min-w-0">
         <label
           htmlFor="search"
           className="font-bold text-3xl flex items-center"
@@ -42,7 +42,7 @@ function Search() {
           id="search"
           placeholder="Random GIF"
           autoComplete="off"
-          className="border-black border-b-2 focus:outline-none text-3xl"
+          className="border-black border-b-2 focus:outline-none text-3xl w-min"
           onChange={changeKeyword}
         />
         <button
