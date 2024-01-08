@@ -28,11 +28,11 @@ function Search() {
   }
 
   return (
-    <main className="flex  flex-col items-center gap-56 mb-auto">
-      <div className="flex flex-wrap gap-6 mt-20 min-w-0">
+    <main className="flex  flex-col items-center mb-auto">
+      <div className="flex flex-col md:flex-row items-center gap-6 mt-10 mb-10 min-w-0">
         <label
           htmlFor="search"
-          className="font-bold text-3xl flex items-center"
+          className="font-bold text-base md:text-3xl flex items-center"
         >
           Category:
         </label>
@@ -42,14 +42,15 @@ function Search() {
           id="search"
           placeholder="Random GIF"
           autoComplete="off"
-          className="border-black border-b-2 focus:outline-none text-3xl w-min"
+          className="border-black border-b-2 focus:outline-none text-base md:text-3xl w-2/3 md:min-w-fit"
           onChange={changeKeyword}
         />
         <button
+          onClick={changeMeme}
           type="button"
-          className="bg-pink-300 p-4 rounded-xl drop-shadow-xl border-none border-0 active:bg-pink-500 transition-all"
+          className="bg-pink-300 p-4 w-2/3 md:w-fit rounded-xl drop-shadow-xl border-none border-0 active:bg-pink-500 transition-all"
         >
-          <img src={searchIcon} onClick={changeMeme} alt="search icon" />
+          <img src={searchIcon} alt="search icon" />
         </button>
       </div>
       <MemeImage memeUrl={memeUrl} />
